@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.color-pickers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.picker {
+    width: 25vw;
+    height: 25vw;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #000;
+    cursor: pointer;
+}
+
+.picker input {
+    width: 100%;
+    height: 100%;
+}
+
+#target { 
+    height: 50dvw;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+#mix-button {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

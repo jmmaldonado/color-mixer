@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixing Colors Game</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div >
+        <h2>Mixing Colors Game</h2>
+        <div class="color-pickers">
+            <div class="picker" id="picker1">
+                <input type="color" data-color="#000000">
+            </div>
+            <div class="picker" id="picker2">
+                <input type="color" data-color="#000000">
+            </div>
+            <div class="picker" id="picker3">
+                <input type="color" data-color="#000000">
+            </div>
+        </div>
+        <button id="mix-button">Mix Colors</button>
+        <div id="target"></div>
+        <div class="color-pickers">
+            <div class="picker" id="target-red"></div>
+            <div class="picker" id="target-green"></div>
+            <div class="picker" id="target-blue"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "name": "Color mixer",
+    "short_name": "Color mixer",
+    "icons": [
+      {
+        "src": "https://cdn.iconscout.com/icon/free/png-512/free-color-palette-1575051-1331386.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
+  
