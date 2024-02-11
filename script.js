@@ -3,6 +3,12 @@
 function updateColor(picker) {
   const color = picker.dataset.color;
   picker.style.backgroundColor = color;
+
+  const color1 = pickers[0].dataset.color;
+  const color2 = pickers[1].dataset.color;
+  const color3 = pickers[2].dataset.color;
+
+  const mixedColor = mixColors(color1, color2, color3);
 }
 
 const pickers = document.querySelectorAll('.picker input');
@@ -21,17 +27,17 @@ pickers.forEach(picker => {
 });
 
 
-mixButton.addEventListener('click', () => {
-  const color1 = pickers[0].dataset.color;
-  const color2 = pickers[1].dataset.color;
-  const color3 = pickers[2].dataset.color;
+// mixButton.addEventListener('click', () => {
+//   const color1 = pickers[0].dataset.color;
+//   const color2 = pickers[1].dataset.color;
+//   const color3 = pickers[2].dataset.color;
 
-  // Implement your mixing logic here. This could be a simple average or something more advanced
-  const mixedColor = mixColors(color1, color2, color3);
+//   // Implement your mixing logic here. This could be a simple average or something more advanced
+//   const mixedColor = mixColors(color1, color2, color3);
 
 
-  console.log(mixedColor)
-});
+//   console.log(mixedColor)
+// });
 
 function mixColors(color1, color2, color3) {
   // Replace this with your actual mixing logic
@@ -55,9 +61,9 @@ function mixColors(color1, color2, color3) {
   const mixedColor = `#${redMixed.toString(16).padStart(2, "0")}${greenMixed.toString(16).padStart(2, "0")}${blueMixed.toString(16).padStart(2, "0")}`;
 
   target.style.backgroundColor = mixedColor;
-  targetRed.style.backgroundColor = `#${redMixed.toString(16).padStart(2, "0")}0000`
-  targetGreen.style.backgroundColor = `#00${greenMixed.toString(16).padStart(2, "0")}00`
-  targetBlue.style.backgroundColor = `#0000${blueMixed.toString(16).padStart(2, "0")}`
+//   targetRed.style.backgroundColor = `#${redMixed.toString(16).padStart(2, "0")}0000`
+//   targetGreen.style.backgroundColor = `#00${greenMixed.toString(16).padStart(2, "0")}00`
+//   targetBlue.style.backgroundColor = `#0000${blueMixed.toString(16).padStart(2, "0")}`
 
   return mixedColor;
 }
