@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mixing Colors Game</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body id="target">
     <div id="controls">
         <h2>Mixing Colors Game</h2>
         <div class="color-pickers">
-            <div class="picker" id="picker1">
-                <input type="color" data-color="#ffffff"  value="#ffffff">
+            <div class="picker-holder">
+                <div class="picker" id="picker1">
+                    <input type="color" data-color="#ff0000" value="#ff0000">
+
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="checkPicker1">
+                    <span class="slider round"></span>
+                </label>
             </div>
-            <div class="picker" id="picker2">
-                <input type="color" data-color="#ffffff" value="#ffffff">
+            <div class="picker-holder">
+                <div class="picker" id="picker2">
+                    <input type="color" data-color="#00ff00" value="#00ff00">
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="checkPicker2">
+                    <span class="slider round"></span>
+                </label>
             </div>
-            <div class="picker" id="picker3">
-                <input type="color" data-color="#ffffff"  value="#ffffff">
+            <div class="picker-holder">
+                <div class="picker" id="picker3">
+                    <input type="color" data-color="#0000ff" value="#0000ff">
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="checkPicker3">
+                    <span class="slider round"></span>
+                </label>
             </div>
         </div>
         <!-- <button id="mix-button">Mix Colors</button> -->
